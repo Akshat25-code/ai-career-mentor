@@ -105,6 +105,13 @@ cd "d:\Project\Hackathon_Project\vibe_hack(2.0)\ai-career-mentor\server"
 npm run demo:seed -- --email you@example.com
 ```
 
+## Judge Demo Script (60–90s)
+1. **Login** with Google.
+2. On **Dashboard**, click **Seed demo data** (instant “good” vs “bad” resume + one interview + roadmap).
+3. Go to **Resume** → open history → **Compare** (show ATS score + quick wins + job description keyword gaps).
+4. Go to **Interview** → start a session → do 1–2 turns (show feedback + model answer) → end for summary.
+5. Go to **Roadmap** → check off items to show progress updates.
+
 ## Lint
 ```powershell
 cd "d:\Project\Hackathon_Project\vibe_hack(2.0)\ai-career-mentor\client"
@@ -115,6 +122,7 @@ npm run lint
 ## Troubleshooting
 - **Google error `redirect_uri_mismatch`:** your Google Console redirect URI must exactly match `GOOGLE_CALLBACK_URL`.
 - **DB errors:** verify `DATABASE_URL` is correct, then run `npm run db:init` again.
+- **Port 5000 already in use:** stop the other process or change `PORT` in `server/.env`.
 - **Quota exceeded (429):** increase `FREE_RESUME_ANALYSES` / `FREE_INTERVIEWS` in `server/.env`.
 
 ## Hackathon Plan
