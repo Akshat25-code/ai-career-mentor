@@ -45,6 +45,7 @@ const interviewRoutes = require('./routes/interview');
 const roadmapRoutes = require('./routes/roadmap');
 const usageRoutes = require('./routes/usage');
 const dashboardRoutes = require('./routes/dashboard');
+const demoRoutes = require('./routes/demo');
 
 // Use Routes
 app.use('/api/auth', authRoutes);
@@ -54,6 +55,7 @@ app.use('/api/interview', interviewRoutes);
 app.use('/api/roadmap', roadmapRoutes);
 app.use('/api/usage', usageRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/demo', demoRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

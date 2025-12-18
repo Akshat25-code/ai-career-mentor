@@ -92,6 +92,25 @@ In Google Cloud Console:
 - `POST /api/roadmap/generate`
 - `POST /api/roadmap/milestone`
 - `GET /api/usage/status`
+- `POST /api/demo/seed`
+
+## Demo (Golden Path)
+Option A (in-app):
+- Log in
+- Go to Dashboard → click **Seed demo data**
+
+Option B (script):
+```powershell
+cd "d:\Project\Hackathon_Project\vibe_hack(2.0)\ai-career-mentor\server"
+npm run demo:seed -- --email you@example.com
+```
+
+## Lint
+```powershell
+cd "d:\Project\Hackathon_Project\vibe_hack(2.0)\ai-career-mentor\client"
+npm install
+npm run lint
+```
 
 ## Troubleshooting
 - **Google error `redirect_uri_mismatch`:** your Google Console redirect URI must exactly match `GOOGLE_CALLBACK_URL`.
